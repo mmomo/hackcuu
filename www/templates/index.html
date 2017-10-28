@@ -12,15 +12,24 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+   
     <!-- Custom styles for this template -->
     <link href="../css/jumbotron.css" rel="stylesheet">
 
     <style>
-     img {
+     img{
 	 width: 75px;
 	 height: 75px;
+   border-radius:150px;
+   box-shadow: 2px 2px 5px #999;
      }
+     h4{
+      text-align: center;
+      padding-top: 10%; 
+     };
+  
+    
+
     </style>
   </head>
 
@@ -65,15 +74,15 @@
 	    <div class="row">
 		<div class="col">
 		    <h4>A</h4>
-		    <img src="../img/A.png" />
+		   <a onclick="ok()"> <img src="../img/A.png" /> </a>
 		</div>
 		<div class="col">
 		    <h4>B</h4>
-		    <img src="../img/B.png" />
+		   <a onclick="ok1()"> <img src="../img/B.png" /></a>
 		</div>
 		<div class="col">
 		    <h4>C</h4>
-		    <img src="../img/C.png" />
+		   <a onclick="ok2()"> <img src="../img/C.png" /></a>
 		</div>
 	    </div>
 	    <div class="row">
@@ -213,7 +222,30 @@
 	<div id="myModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 	    <div class="modal-dialog modal-sm">
 		<div class="modal-content">
-		    Hola
+		    Con la mano cerrada, se muestran las uñas
+        y se estira el dedo pulgar hacia un lado. La
+        palma mira al frente.
+		</div>
+	    </div>
+  </div>
+  
+  <div id="myModal1" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+        Los dedos índice, medio, anular y meñique se
+        estiran bien unidos y el pulgar se dobla hacia
+        la palma, la cual mira al frente.
+		</div>
+	    </div>
+  </div>
+  
+  <div id="myModal2" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+        Los dedos índice, medio, anular y meñique se
+        mantienen bien unidos y en posición cóncava;
+        el pulgar también se pone en esa posición. La
+        palma mira a un lado.
 		</div>
 	    </div>
 	</div>
@@ -223,6 +255,12 @@
     <script>
      var ok = function () {
 	 $('#myModal').modal('show');
+     }
+     var ok1 = function () {
+	 $('#myModal1').modal('show');
+     }
+     var ok2 = function () {
+	 $('#myModal2').modal('show');
      }
     </script>
  
