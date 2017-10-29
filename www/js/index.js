@@ -5,7 +5,7 @@ var traducir = function () {
     s = s.toUpperCase();
 
     document.getElementById('board').innerHTML = "\
-    	<div id='carrusel' class='carousel slide' data-ride='carousel'>\
+    	<div id='carrusel' class='carousel slide' data-ride='carousel' data-interval='false'>\
 	    <ol id='lista' class='carousel-indicators'>\
 	    </ol>\
 	    <div id='items' class='carousel-inner' role='listbox'>\
