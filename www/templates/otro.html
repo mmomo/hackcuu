@@ -8,7 +8,22 @@
 	<link rel="icon" href="../img/favicon.ico">
 
 	<title>Jumbotron Template for Bootstrap</title>
-
+  <style>
+input{
+  text-align: center;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  height: 30px;
+  width: 200px;
+  background: 	#DCDCDC;
+  color: black;
+}
+  
+     
+ 
+     </style>
 	<!-- Bootstrap core CSS -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -33,7 +48,7 @@
 		</ul>
 
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="aintext">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="aintext" class="form-control">
           <a href="otro.html" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="traducir()">Traducir</a>
         </form>
 
@@ -43,7 +58,7 @@
     <main role="main">
 	<input type="text" id="intext">
 
-  <button type="button" onclick="traducir()">Traducir</button>
+  <button type="button" onclick="traducir()" class="btn btn-primary">Traducir</button>
 
 	<div id="board">
  	    <div id="carrusel" class="carousel slide" data-ride="carousel">
