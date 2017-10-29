@@ -1,10 +1,10 @@
-var traducir = function () {
-    var s = document.getElementById('intext').value;
-    var archivo = "";
-    
-    s = s.toUpperCase();
+var traducir = function() {
+  var s = document.getElementById("intext").value;
+  var archivo = "";
 
-    document.getElementById('board').innerHTML = "\
+  s = s.toUpperCase();
+
+  document.getElementById('board').innerHTML = "\
     	<div id='carrusel' class='carousel slide' data-ride='carousel'>\
 	    <ol id='lista' class='carousel-indicators'>\
 	    </ol>\
@@ -20,33 +20,30 @@ var traducir = function () {
 	    </a>\
 	</div> ";
 
-    var contador = 0;
-        
-    for (var i = 0; i < s.length; i++) {
-	archivo = s[i] + ".png";
+  var contador = 0;
 
-	//var li = document.createElement('li');
-	
-	//li = "<li data-target='#carrusel' data-slide-to='" + contador + "'></li>";
+  for (var i = 0; i < s.length; i++) {
+    archivo = s[i] + ".png";
 
-	var div = document.createElement('div');
-	if (contador == 0){
-	    div.className = "carousel-item active";
-	} else {
-	    div.className = 'carousel-item';
-	}
-	
-	div.innerHTML = "<img class='d-block img-fluid' src='../img/" + archivo + "' />";
 
-	console.log("ok " + archivo);
-
-	document.getElementById('items').appendChild(div);
-	contador++;
+    var div = document.createElement('div');
+    if (contador == 0) {
+      div.className = "carousel-item active";
+    } else {
+      div.className = 'carousel-item';
     }
-    document.getElementById('intext').value = '';
 
-    /*
-    var board = document.getElementById('board').innerHTML;
-    document.getElementById('board').innerHTML = board;
-    */
+    div.innerHTML = "<img class='d-block img-fluid' src='../img/" + archivo + "' />";
+
+    console.log("ok " + archivo);
+
+    document.getElementById('items').appendChild(div);
+    contador++;
+  }
+  document.getElementById('intext').value = '';
+
+
+  var board = document.getElementById('board').innerHTML;
+  document.getElementById('board').innerHTML = board;
+  
 }

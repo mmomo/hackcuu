@@ -12,15 +12,24 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+   
     <!-- Custom styles for this template -->
     <link href="../css/jumbotron.css" rel="stylesheet">
 
     <style>
-     img {
+     img{
 	 width: 75px;
 	 height: 75px;
+   border-radius:150px;
+   box-shadow: 2px 2px 5px #999;
      }
+     h4{
+      text-align: center;
+      padding-top: 10%; 
+     };
+  
+    
+
     </style>
   </head>
 
@@ -35,26 +44,14 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+
           </li>
         </ul>
+        
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="intext">
+          <a href="otro.html" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="traducir()">Traducir</a>
         </form>
       </div>
     </nav>
@@ -65,15 +62,17 @@
 	    <div class="row">
 		<div class="col">
 		    <h4>A</h4>
+
 		    <a onclick="ok()"><img src="../img/A.png" /></a>
+		 
 		</div>
 		<div class="col">
 		    <h4>B</h4>
-		    <img src="../img/B.png" />
+		   <a onclick="ok1()"> <img src="../img/B.png" /></a>
 		</div>
 		<div class="col">
 		    <h4>C</h4>
-		    <img src="../img/C.png" />
+		   <a onclick="ok2()"> <img src="../img/C.png" /></a>
 		</div>
 	    </div>
 	    <div class="row">
@@ -213,20 +212,54 @@
 	<div id="myModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 	    <div class="modal-dialog modal-sm">
 		<div class="modal-content">
-		    Hola
+		    Con la mano cerrada, se muestran las uñas
+        y se estira el dedo pulgar hacia un lado. La
+        palma mira al frente.
+		</div>
+	    </div>
+  </div>
+  
+  <div id="myModal1" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+        Los dedos índice, medio, anular y meñique se
+        estiran bien unidos y el pulgar se dobla hacia
+        la palma, la cual mira al frente.
+		</div>
+	    </div>
+  </div>
+  
+  <div id="myModal2" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	    <div class="modal-dialog modal-sm">
+		<div class="modal-content">
+        Los dedos índice, medio, anular y meñique se
+        mantienen bien unidos y en posición cóncava;
+        el pulgar también se pone en esa posición. La
+        palma mira a un lado.
 		</div>
 	    </div>
 	</div>
 
 	<div id
 	
+
     </main>
 
     <script>
      var ok = function () {
 	 $('#myModal').modal('show');
      }
+     var ok1 = function () {
+	 $('#myModal1').modal('show');
+     }
+     var ok2 = function () {
+	 $('#myModal2').modal('show');
+     }
+
     </script>
+
+
+    <script src="../js/index.js"></script> 
  
     <!-- Bootstrap core JavaScript
     ================================================== -->
