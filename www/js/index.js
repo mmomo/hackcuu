@@ -25,10 +25,6 @@ var traducir = function () {
     for (var i = 0; i < s.length; i++) {
 	archivo = s[i] + ".png";
 
-	//var li = document.createElement('li');
-	
-	//li = "<li data-target='#carrusel' data-slide-to='" + contador + "'></li>";
-
 	var div = document.createElement('div');
 	if (contador == 0){
 	    div.className = "carousel-item active";
